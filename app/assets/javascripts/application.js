@@ -13,4 +13,31 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap-sprockets
 //= require_tree .
+
+
+$(document).ready(function(){
+
+    console.log("Ready!");
+/**/
+
+
+    $(".my-num").keyup(function () {
+        if (this.value.length == this.maxLength) {
+            console.log("Boom!");
+          $(this).next('.my-num').focus();
+        }
+    });
+
+    $(".last-num").keyup(function () {
+        if (this.value.length == this.maxLength) {
+            console.log("CHAKA LAKA!");
+          $(this).parent().find(".submit-btn").focus();
+        }
+    });
+
+
+
+});
+

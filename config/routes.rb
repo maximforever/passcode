@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   root 'pages#index'
   get 'pages' => 'pages#index'
-  post '/pages' => 'pages#index'
+  post '/pages' => 'pages#submit'
   get '/secret' => 'pages#secret'
 
   # The priority is based upon order of creation: first created -> highest priority.
